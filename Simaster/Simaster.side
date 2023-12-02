@@ -1,0 +1,352 @@
+{
+  "id": "ca2cddfa-3fc8-45ea-915b-24e87bb3218a",
+  "version": "2.0",
+  "name": "Simaster",
+  "url": "https://simaster.ugm.ac.id",
+  "tests": [{
+    "id": "89a99e84-64d3-445c-851d-8d48c57fb950",
+    "name": "Pengajuan berkas untuk data DMS, dengan ukuran berkas >5mb",
+    "commands": [{
+      "id": "b35dde1f-1eb2-41c0-b17d-cc170945b793",
+      "comment": "",
+      "command": "open",
+      "target": "/beranda/beranda/view",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72839e13-7472-4ebc-91cd-a99f2c671b42",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a64313c3-7688-4bc4-9719-dc8666bdc2e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown:nth-child(4) > a > .px-nav-label",
+      "targets": [
+        ["css=.dropdown:nth-child(4) > a > .px-nav-label", "css:finder"],
+        ["xpath=//div[@id='px-demo-navbar-collapse']/ul/li[4]/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/ul/li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Administrasi')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2aa4d7c4-32f4-4d2f-add8-20c638327877",
+      "comment": "",
+      "command": "click",
+      "target": "css=.open li:nth-child(3) .px-nav-label",
+      "targets": [
+        ["css=.open li:nth-child(3) .px-nav-label", "css:finder"],
+        ["xpath=//div[@id='px-demo-navbar-collapse']/ul/li[4]/ul/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//li[4]/ul/li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'DMS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9324674a-d9fd-44fc-954b-b53438969864",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Unggah Berkas",
+      "targets": [
+        ["linkText=Unggah Berkas", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//a[contains(text(),'Unggah Berkas')]", "xpath:link"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://simaster.ugm.ac.id/dms/myfiles/add')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Unggah Berkas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45f23cde-bbd7-4c43-8824-b913dc4dc1ea",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-file_semester-container",
+      "targets": [
+        ["id=select2-file_semester-container", "id"],
+        ["css=#select2-file_semester-container", "css:finder"],
+        ["xpath=//span[@id='select2-file_semester-container']", "xpath:attributes"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/div[2]/form/div[2]/div/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d9765f1-88b1-4947-9f52-e960888f011a",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-jenis_id-container",
+      "targets": [
+        ["id=select2-jenis_id-container", "id"],
+        ["css=#select2-jenis_id-container", "css:finder"],
+        ["xpath=//span[@id='select2-jenis_id-container']", "xpath:attributes"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/div[2]/form/div[3]/div/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37e0a555-43be-4f57-a2e4-e983ed947fc2",
+      "comment": "",
+      "command": "click",
+      "target": "name=file_title",
+      "targets": [
+        ["name=file_title", "name"],
+        ["css=.form-group:nth-child(5) .form-control", "css:finder"],
+        ["xpath=//input[@name='file_title']", "xpath:attributes"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/div[2]/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d17991c5-04a2-4434-953b-090c5fb401b8",
+      "comment": "",
+      "command": "type",
+      "target": "name=file_title",
+      "targets": [
+        ["name=file_title", "name"],
+        ["css=.form-group:nth-child(5) .form-control", "css:finder"],
+        ["xpath=//input[@name='file_title']", "xpath:attributes"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/div[2]/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "foto"
+    }, {
+      "id": "4045eb20-3612-4d20-8873-cefff7a1b295",
+      "comment": "",
+      "command": "click",
+      "target": "name=file",
+      "targets": [
+        ["name=file", "name"],
+        ["css=.form-group:nth-child(7) input", "css:finder"],
+        ["xpath=//input[@name='file']", "xpath:attributes"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/div[2]/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf3378e1-9b24-45ef-8124-fee87d35c107",
+      "comment": "",
+      "command": "type",
+      "target": "name=file",
+      "targets": [
+        ["name=file", "name"],
+        ["css=.form-group:nth-child(7) input", "css:finder"],
+        ["xpath=//input[@name='file']", "xpath:attributes"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/div[2]/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\python-3.10.7-amd64.exe"
+    }, {
+      "id": "12a68852-9be9-4a03-ae9d-815f4af617f7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-info",
+      "targets": [
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/div[2]/form/div[7]/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Unggah')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "35fa323b-d049-491c-bdef-e467334386a0",
+    "name": "Pengajuan berkas untuk data DMS, dengan ukuran berkas <5mb",
+    "commands": [{
+      "id": "642d42e1-4345-4d4d-a80d-22daafbfefc5",
+      "comment": "",
+      "command": "open",
+      "target": "/beranda/beranda/view",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "588bee7f-4a6b-459d-ba0d-f11fac9ae095",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6719185a-62df-4db7-82a9-ba9d92e55be7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Administrasi",
+      "targets": [
+        ["linkText=Administrasi", "linkText"],
+        ["css=.nav:nth-child(1) > .dropdown:nth-child(4) > a", "css:finder"],
+        ["xpath=//div[@id='px-demo-navbar-collapse']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[12]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b076f49-9711-48d3-b9d8-287355db1a91",
+      "comment": "",
+      "command": "click",
+      "target": "css=.open li:nth-child(3) .px-nav-label",
+      "targets": [
+        ["css=.open li:nth-child(3) .px-nav-label", "css:finder"],
+        ["xpath=//div[@id='px-demo-navbar-collapse']/ul/li[4]/ul/li[3]/a/span", "xpath:idRelative"],
+        ["xpath=//li[4]/ul/li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'DMS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19c505f4-1e3b-4614-8fa7-6b8848d12db4",
+      "comment": "",
+      "command": "click",
+      "target": "id=subcontent-element",
+      "targets": [
+        ["id=subcontent-element", "id"],
+        ["css=#subcontent-element", "css:finder"],
+        ["xpath=//div[@id='subcontent-element']", "xpath:attributes"],
+        ["xpath=//div[@id='noscript']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "804c1238-c159-4fff-a5d9-6239000fa3bb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Unggah Berkas",
+      "targets": [
+        ["linkText=Unggah Berkas", "linkText"],
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//a[contains(text(),'Unggah Berkas')]", "xpath:link"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://simaster.ugm.ac.id/dms/myfiles/add')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Unggah Berkas')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "798aae4f-4a4a-4ef1-bbf5-d59042ad5ca9",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-file_semester-container",
+      "targets": [
+        ["id=select2-file_semester-container", "id"],
+        ["css=#select2-file_semester-container", "css:finder"],
+        ["xpath=//span[@id='select2-file_semester-container']", "xpath:attributes"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/div[2]/form/div[2]/div/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d7540773-e434-4212-8c69-494f6eaf2877",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-horizontal",
+      "targets": [
+        ["css=.form-horizontal", "css:finder"],
+        ["xpath=//form[@action='https://simaster.ugm.ac.id/dms/myfiles/upload']", "xpath:attributes"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/div[2]/form", "xpath:idRelative"],
+        ["xpath=//form", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "01e40560-8c16-44c4-8408-0b6c122ea903",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-jenis_id-container",
+      "targets": [
+        ["id=select2-jenis_id-container", "id"],
+        ["css=#select2-jenis_id-container", "css:finder"],
+        ["xpath=//span[@id='select2-jenis_id-container']", "xpath:attributes"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/div[2]/form/div[3]/div/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4315f827-2912-4839-8f21-93885eb4eda0",
+      "comment": "",
+      "command": "click",
+      "target": "id=select2-jenis_id-container",
+      "targets": [
+        ["id=select2-jenis_id-container", "id"],
+        ["css=#select2-jenis_id-container", "css:finder"],
+        ["xpath=//span[@id='select2-jenis_id-container']", "xpath:attributes"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/div[2]/form/div[3]/div/span/span/span/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "653340e6-a45f-4cd9-bb48-bb6a87809d77",
+      "comment": "",
+      "command": "click",
+      "target": "name=file_title",
+      "targets": [
+        ["name=file_title", "name"],
+        ["css=.form-group:nth-child(5) .form-control", "css:finder"],
+        ["xpath=//input[@name='file_title']", "xpath:attributes"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/div[2]/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5e146dd-fc82-497c-9a4e-9ed300599ac6",
+      "comment": "",
+      "command": "type",
+      "target": "name=file_title",
+      "targets": [
+        ["name=file_title", "name"],
+        ["css=.form-group:nth-child(5) .form-control", "css:finder"],
+        ["xpath=//input[@name='file_title']", "xpath:attributes"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/div[2]/form/div[4]/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/input", "xpath:position"]
+      ],
+      "value": "foto"
+    }, {
+      "id": "c22484e6-fc18-475c-a018-14734d49e7f3",
+      "comment": "",
+      "command": "click",
+      "target": "name=file",
+      "targets": [
+        ["name=file", "name"],
+        ["css=.form-group:nth-child(7) input", "css:finder"],
+        ["xpath=//input[@name='file']", "xpath:attributes"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/div[2]/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac61a05e-5ac9-4e95-ad2c-ccaae91c7644",
+      "comment": "",
+      "command": "type",
+      "target": "name=file",
+      "targets": [
+        ["name=file", "name"],
+        ["css=.form-group:nth-child(7) input", "css:finder"],
+        ["xpath=//input[@name='file']", "xpath:attributes"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/div[2]/form/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "C:\\fakepath\\download.jpeg"
+    }, {
+      "id": "a231ad5a-93ba-4953-9eb2-f9114ea51b52",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-info",
+      "targets": [
+        ["css=.btn-info", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='subcontent-element']/div[2]/div/div/div[2]/form/div[7]/div/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Unggah')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7a5edad7-7046-4fbc-ac5a-71bcbf0992e3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://simaster.ugm.ac.id/"],
+  "plugins": []
+}

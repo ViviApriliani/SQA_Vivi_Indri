@@ -1,0 +1,556 @@
+{
+  "id": "ceac562b-f2fd-4b29-b653-16dc24882705",
+  "version": "2.0",
+  "name": "Shopee",
+  "url": "https://shopee.co.id",
+  "tests": [{
+    "id": "d2d12bb5-47c3-4022-b779-5a3f1e6d9a14",
+    "name": "Mengosongkan semua isian data login",
+    "commands": [{
+      "id": "8b0df40f-015a-436c-a15c-ab116d13a570",
+      "comment": "",
+      "command": "open",
+      "target": "/buyer/login?next=https%3A%2F%2Fshopee.co.id%2Flog.in.",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03917936-c113-43b9-8d2c-74c860d2e66f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "656x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f65717ae-1d11-462e-ab13-0a52b5a4587b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "64e30d34-6d00-4b0d-bd2a-c93dac61c2e7",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "654ab0f7-b988-41ed-a0c0-6c2e3e8f1229",
+      "comment": "",
+      "command": "click",
+      "target": "name=loginKey",
+      "targets": [
+        ["name=loginKey", "name"],
+        ["css=.D3QIf1 .pDzPRp", "css:finder"],
+        ["xpath=//input[@name='loginKey']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div[2]/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "71a654d8-633e-4fa0-985d-75867d36de2d",
+    "name": "Hanya mengisi data email dan mengosongkan data password",
+    "commands": [{
+      "id": "9971807a-854d-4803-8b72-02efaf513fec",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "30e4dcc1-943e-41c1-8e98-11bab3c19d12",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "656x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b3d5f5dd-d4d1-480a-86a4-ace069196e98",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.stardust-carousel__item:nth-child(2) .VNlkcn",
+      "targets": [
+        ["css=.stardust-carousel__item:nth-child(2) .VNlkcn", "css:finder"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div[2]/div/div/div/div/div/div/ul/li[2]/div/a/div/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//li[2]/div/a/div/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de7a89b3-5136-4170-b466-ad54b6096c27",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.wpHTxX:nth-child(2) .\\_9puaeP",
+      "targets": [
+        ["css=.wpHTxX:nth-child(2) .\\_9puaeP", "css:finder"],
+        ["xpath=(//img[@alt='Banner'])[6]", "xpath:img"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div[2]/div/div/div/div[2]/a[2]/div/img", "xpath:idRelative"],
+        ["xpath=//a[2]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "351c5e01-154a-4240-9c12-e8b56287a17b",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4bf6fae-c22d-4b1b-ab09-408dd197f733",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log In",
+      "targets": [
+        ["linkText=Log In", "linkText"],
+        ["css=.navbar__link--login", "css:finder"],
+        ["xpath=//a[contains(text(),'Log In')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div/header/div/nav/ul/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/buyer/login?next=https%3A%2F%2Fshopee.co.id%2F')]", "xpath:href"],
+        ["xpath=//ul/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c525b1c5-80ec-4501-9d19-c0ed40ede9b9",
+      "comment": "",
+      "command": "type",
+      "target": "name=loginKey",
+      "targets": [
+        ["name=loginKey", "name"],
+        ["css=.SdUtrz > .pDzPRp", "css:finder"],
+        ["xpath=//input[@name='loginKey']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div[2]/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ev10n9un66"
+    }]
+  }, {
+    "id": "4bb6f718-f53c-4faf-91bb-5c4aa1b56b75",
+    "name": "Menginputkan dengan kondisi email benar dan password salah",
+    "commands": [{
+      "id": "97038eb9-5ee4-4976-ae79-0b3d95860d68",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f32092dd-1442-4fdc-afe3-6dcb8a52a9c9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "263df4ee-f265-40c3-b615-88325a26a4d0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log In",
+      "targets": [
+        ["linkText=Log In", "linkText"],
+        ["css=.navbar__link--login", "css:finder"],
+        ["xpath=//a[contains(text(),'Log In')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div/header/div/nav/ul/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/buyer/login?next=https%3A%2F%2Fshopee.co.id%2F')]", "xpath:href"],
+        ["xpath=//ul/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9507413d-4d79-4523-a2f5-470b205e6b86",
+      "comment": "",
+      "command": "type",
+      "target": "name=loginKey",
+      "targets": [
+        ["name=loginKey", "name"],
+        ["css=.SdUtrz > .pDzPRp", "css:finder"],
+        ["xpath=//input[@name='loginKey']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div[2]/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ev10n9un66"
+    }, {
+      "id": "d13ca152-f9b3-4760-8995-d0d90826ded0",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.SdUtrz > .pDzPRp", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div[2]/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "400fc311-4839-4076-9cf4-a1bed7bd14ae",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.SdUtrz > .pDzPRp", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div[2]/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "koaeiojdowjojow"
+    }, {
+      "id": "e6a1f860-2402-4bbc-85c2-026117fea09b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wyhvVD",
+      "targets": [
+        ["css=.wyhvVD", "css:finder"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div[2]/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e38c8120-41ff-41ea-8dfa-e54fccd133c2",
+    "name": "Menginput data login yang benar",
+    "commands": [{
+      "id": "3a831e07-7cbb-40c4-861c-6432ec945168",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f21c52d-9a3c-4263-a826-ceb72296f3e3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93f7d5fc-a7dd-4f2c-89da-902cfeda11b0",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Log In",
+      "targets": [
+        ["linkText=Log In", "linkText"],
+        ["css=.navbar__link--login", "css:finder"],
+        ["xpath=//a[contains(text(),'Log In')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div/header/div/nav/ul/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/buyer/login?next=https%3A%2F%2Fshopee.co.id%2F')]", "xpath:href"],
+        ["xpath=//ul/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9693f60c-580f-49fe-b8c0-e450119c0d87",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log In",
+      "targets": [
+        ["linkText=Log In", "linkText"],
+        ["css=.navbar__link--login", "css:finder"],
+        ["xpath=//a[contains(text(),'Log In')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div/header/div/nav/ul/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/buyer/login?next=https%3A%2F%2Fshopee.co.id%2F')]", "xpath:href"],
+        ["xpath=//ul/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5661c240-3d0e-46b7-b8e4-8d26194f3502",
+      "comment": "",
+      "command": "type",
+      "target": "name=loginKey",
+      "targets": [
+        ["name=loginKey", "name"],
+        ["css=.SdUtrz > .pDzPRp", "css:finder"],
+        ["xpath=//input[@name='loginKey']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div[2]/div/div[2]/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "ev10n9un66"
+    }, {
+      "id": "205b2ccd-5ee6-4059-922c-9e5fad9bc673",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.SdUtrz > .pDzPRp", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div[2]/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf90d7ff-7bab-4fe1-9afe-37117d8870da",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.SdUtrz > .pDzPRp", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div[2]/div/div[2]/form/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Thismyself9"
+    }, {
+      "id": "fb6bd671-2f7d-4d75-b761-510387d8ccf8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.wyhvVD",
+      "targets": [
+        ["css=.wyhvVD", "css:finder"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div[2]/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "97fdda85-a989-4880-9fba-e971a18f4c2e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dWxniD",
+      "targets": [
+        ["css=.dWxniD", "css:finder"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div/div/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Verifikasi melalui link')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd76a876-765c-4894-b6fc-bb6039a7235a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.GhFPxQ",
+      "targets": [
+        ["css=.GhFPxQ", "css:finder"],
+        ["xpath=//div[@id='modal']/aside/div/div/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Kirim lewat SMS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "be92b073-4e94-4ab4-a519-a82c4af72626",
+    "name": "Menginput nama barang di pencarian",
+    "commands": [{
+      "id": "6c2afa71-8414-4953-8dba-e8d5f45db223",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cea6a19f-90fa-4e16-8669-3d219a233173",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fb0280fd-bb67-450b-a57a-45ad58f20e54",
+      "comment": "",
+      "command": "click",
+      "target": "css=.shopee-searchbar-input__input",
+      "targets": [
+        ["css=.shopee-searchbar-input__input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/header/div[2]/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "10ec2c63-3df0-4cfc-ae6f-6fc910f69472",
+      "comment": "",
+      "command": "type",
+      "target": "css=.shopee-searchbar-input__input",
+      "targets": [
+        ["css=.shopee-searchbar-input__input", "css:finder"],
+        ["xpath=//input[@value='piring']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/header/div[2]/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "piring"
+    }, {
+      "id": "81bd8f87-e892-4ea9-91e0-a3a85bb50c34",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "css=.shopee-searchbar-input__input",
+      "targets": [
+        ["css=.shopee-searchbar-input__input", "css:finder"],
+        ["xpath=//input[@value='piring']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/header/div[2]/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f7b64211-bf02-4990-bd87-9fa4143e8fdc",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,98)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08d9640e-67ca-4779-a295-a2f746e864c5",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,199.3333282470703)",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5eb5e6b9-0d6d-4d35-910f-ee4b0be4e44f",
+    "name": "Memasukkan barang ke keranjang",
+    "commands": [{
+      "id": "1a3c3cdc-525b-4779-9953-9f5156db1785",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "895278d6-1506-43f1-a420-48317fd21674",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x696",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55a9db5e-8ab8-4aff-8130-21ee1dac79d3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,652)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dba1a741-5932-47fe-acee-2826ceb6dac1",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1411.3333740234375)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3f1f2f0-d7de-413d-8425-b93724db9718",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1819.3333740234375)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4a3f017-c808-4c6b-b92b-07e80a5a2c68",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Odjj3U:nth-child(2) .shopee_itemcard__promotion_overlay:nth-child(2) > .w-full:nth-child(1)",
+      "targets": [
+        ["css=.Odjj3U:nth-child(2) .shopee_itemcard__promotion_overlay:nth-child(2) > .w-full:nth-child(1)", "css:finder"],
+        ["xpath=//img[contains(@src,'https://down-id.img.susercontent.com/file/id-50009109-4635a7c1e1807cfc5829478dbcec889c')]", "xpath:img"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div[3]/div[2]/div[6]/div/div/div/div[2]/section/div/div[2]/div/div/div/a/div/div/div/div[2]/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/a/div/div/div/div[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76a29857-9ba9-48c8-a82d-5dee64ddb33e",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a44a557-1ae1-459a-8e2c-5b0410dacbbb",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,280)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9510220b-55e9-479a-931b-09577a2da077",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn--l > span",
+      "targets": [
+        ["css=.btn--l > span", "css:finder"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div[2]/section/section[2]/div/div[5]/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d496c38-433a-4871-b2b1-b5675be99cff",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn--l > span",
+      "targets": [
+        ["css=.btn--l > span", "css:finder"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div[2]/section/section[2]/div/div[5]/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54bf5ee9-c567-4d41-849d-3515315a9d90",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.QA-ylc",
+      "targets": [
+        ["css=.QA-ylc", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div[2]/section/section[2]/div/div[5]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c5be6c7-fd83-427e-9087-2fcecf43a69a",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.QA-ylc",
+      "targets": [
+        ["css=.QA-ylc", "css:finder"],
+        ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div[2]/section/section[2]/div/div[5]/div/div/button", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1894b54-e123-485d-9ea9-f6700683347c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn--l > span",
+      "targets": [
+        ["css=.btn--l > span", "css:finder"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div[2]/section/section[2]/div/div[5]/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15dd6d5e-cdaa-4405-a0a6-bafdacd2d26e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hUWqqt:nth-child(2)",
+      "targets": [
+        ["css=.hUWqqt:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div[2]/section/section[2]/div/div[4]/div/div[2]/div/section/div/button[2]", "xpath:idRelative"],
+        ["xpath=//section/div/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'02 NATURAL')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7c1fecc-95f6-47e7-8971-7331651e2342",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn--l > span",
+      "targets": [
+        ["css=.btn--l > span", "css:finder"],
+        ["xpath=//div[@id='main']/div/div[2]/div/div/div/div[2]/section/section[2]/div/div[5]/div/div/button/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "26188e4c-9b4d-4674-b8e3-2b204da2efe1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://shopee.co.id/"],
+  "plugins": []
+}
